@@ -4,6 +4,6 @@ class CoursesController < ApplicationController
   end
 
   def show 
-    Course.find(params[:id])
+    @course = Course.find(params.permit(:id)[:id])
   end
 end

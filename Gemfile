@@ -36,6 +36,9 @@ gem 'bootstrap', '4.0.0.alpha6'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave', '~> 2.0'
+gem 'mini_magick'
+gem 'carrierwave-aws'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
