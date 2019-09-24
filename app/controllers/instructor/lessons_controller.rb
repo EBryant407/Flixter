@@ -3,7 +3,7 @@ class Instructor::LessonsController < ApplicationController
   before_action :require_authorized_for_current_section
 
   def new
-    @lesson = Lession.new
+    @lesson = Lesson.new
   end
 
   def create
@@ -20,6 +20,6 @@ class Instructor::LessonsController < ApplicationController
   end
 
   def lesson_params
-    params.require(:lesson).permit(:title, :subtitle)
+    params.require(:lesson).permit(:title, :subtitle :video)
   end
 end
