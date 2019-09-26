@@ -19,6 +19,11 @@ class Instructor::LessonsController < ApplicationController
     end
   end
 
+helper_method :current_course
+  def current_course
+    @current_course ||= Course.find(params[:course_id])
+  end
+
   def lesson_params
     params.require(:lesson).permit(:title, :subtitle, :video)
   end
