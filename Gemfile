@@ -43,6 +43,7 @@ gem 'fog-aws'
 gem 'figaro'
 gem 'stripe'
 gem 'ranked-model'
+gem 'jquery-ui-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
