@@ -27,9 +27,12 @@ class SectionsController < ApplicationController
      redirect_to courses_url
   end
 
-  helper_method :current_section
-  def current_section
-    @current_section ||= Section.find(params[:id])
+  helper_method :current_course
+  def current_course
+    @current_course ||= Course.find(params[:course_id])
+   else
+    current_section.course
+   end
   end
 
   def lesson_params
