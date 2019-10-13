@@ -5,5 +5,5 @@ class Section < ApplicationRecord
   validates :title, presence: true
 
   include RankedModel
-  ranks :row_order, with_same: => :course_id
+  ranks :row_order, :with_same => :course_id
 end
