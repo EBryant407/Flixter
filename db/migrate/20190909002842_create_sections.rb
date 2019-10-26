@@ -5,9 +5,8 @@ class CreateSections < ActiveRecord::Migration[5.2]
      t.integer "course_id"
      t.datetime "created_at", null: false
      t.datetime "updated_at", null: false
-     t.index ["course_id"], name: "index_sections_on_course_id"
+    # t.index ["course_id"], name: "index_sections_on_course_id"
      t.integer "row_order"
     end
-    add_index :sections, :course_id
   end
 end

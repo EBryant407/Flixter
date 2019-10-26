@@ -45,6 +45,7 @@ ActiveRecord::Schema.define(version: 2019_10_10_065948) do
     t.integer "row_order"
     t.index ["row_order"], name: "index_lessons_on_row_order"
     t.index ["section_id"], name: "index_lessons_on_section_id"
+    t.index ["section_id"], name: "index_lessons_on_sections"
   end
 
   create_table "sections", force: :cascade do |t|
@@ -53,7 +54,6 @@ ActiveRecord::Schema.define(version: 2019_10_10_065948) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "row_order"
-    t.index ["course_id"], name: "index_sections_on_course_id"
     t.index ["row_order"], name: "index_sections_on_row_order"
   end
 
