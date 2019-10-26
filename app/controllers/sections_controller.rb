@@ -25,6 +25,7 @@ class SectionsController < ApplicationController
     if current_section.course.user != current_user
      flash[:notice] = "You must Enroll first"
      redirect_to courses_url
+    end
   end
 
   helper_method :current_course
