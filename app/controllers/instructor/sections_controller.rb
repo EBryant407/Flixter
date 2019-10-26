@@ -12,8 +12,6 @@ class Instructor::SectionsController < ApplicationController
     current_section.update_attributes(section_params)
   end
 
-  end
-
   private
 
    def current_section
