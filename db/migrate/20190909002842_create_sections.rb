@@ -8,6 +8,6 @@ class CreateSections < ActiveRecord::Migration[5.2]
      t.index ["course_id"], name: "index_sections_on_course_id"
      t.integer "row_order"
     end
-    add_index :courses, :user_id
+    add_index :sections, :course_id
   end
 end
