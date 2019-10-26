@@ -18,7 +18,6 @@ class EnrollmentsController < ApplicationController
        currency: 'usd'
        )
     end
-  end
   
 
   current_user.enrollments.create(course: current_course)
