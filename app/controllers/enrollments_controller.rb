@@ -15,7 +15,7 @@ class EnrollmentsController < ApplicationController
        customer: customer.id,
        amount: @amount,
        description: 'Flixter Premo Content',
-       currency 'usd'
+       currency: 'usd'
        )
     end
   
