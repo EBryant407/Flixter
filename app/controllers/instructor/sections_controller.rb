@@ -19,7 +19,7 @@ class Instructor::SectionsController < ApplicationController
    end
 
   def require_authorized_for_current_course
-    if current_section.course.user != current_user
+    if current_course.user != current_user
      flash[:notice] = "You must Enroll first"
      redirect_to courses_url
     end
